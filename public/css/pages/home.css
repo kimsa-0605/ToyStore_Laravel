@@ -1,0 +1,317 @@
+/* Banner */
+.banner-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('/images/ui/banner.jpg');
+    background-size: cover; 
+    background-position: 10% 91%; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    height: 85vh; 
+    padding-top: 40px; 
+    padding-bottom: 32px;
+    background-color: #fff;
+}
+.banner-blog {
+    text-align: center;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background-color: #fff;
+    color: #111;
+    text-align: center;
+    width: 490px;
+    padding: 40px;
+    max-width: 490px;
+    margin-top: 120px;
+    .banner-blog-content {
+        padding: 10px 15px 30px 15px;
+    }
+}
+.banner-title {
+    margin-bottom: 16px;
+    color: #a5c926;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+.banner-h1-title {
+    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 400;
+}
+.w-button {
+    padding: 15px 28px;
+    border-radius: 24px;
+    background-color: #a5c926;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s 0s ease-in-out;
+}
+.w-button:hover {
+    box-shadow: 0 8px 8px -4px rgba(165, 201, 38, 0.5);
+    transform: scale(1.05);
+    transition: all 0.3s 0s ease-in-out;
+}
+.banner-case-mouse {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 3px;
+    z-index: 0;
+    display: flex;
+    width: 64px;
+    height: 64px;
+    margin-right: auto;
+    margin-bottom: -32px;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+}
+.banner-mouse-button {
+    display: flex;
+    width: 20px;
+    height: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    border: 2px solid #bbb;
+    border-radius: 12px;
+}
+.point-in-mouse {
+    margin-top: 6px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #bbb;
+    animation: moveFade 1.6s ease-out infinite;
+    animation-delay: 1.3s;
+    overflow: hidden;
+}
+@keyframes moveFade {
+    0%, 10% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    20% {  
+        transform: translateY(3px);
+        opacity: 0.9;
+    }
+    40% {  
+        transform: translateY(6px);
+        opacity: 0.3;
+    }
+    60% {  
+        transform: translateY(8px);
+        opacity: 0.2;
+    }
+    80% {
+        transform: translateY(11px);
+        opacity: 0.1;
+    }
+    100% { 
+        transition: all 2s ease-in; 
+        transform: translateY(17px);
+        opacity: 0;
+    }  
+}
+/* End banner */
+/* Call to action */
+.toy-category-container {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0px;
+}
+.toy-category-content {
+    display: flex;
+    justify-content: center;
+    width: 1175px;
+    position: relative;
+    padding: 60px;
+    gap: 30px;
+}
+.category-stuffed-animals, .category-wooden-toys {
+    display: flex;
+    width: 570px;
+    border-radius: 16px;
+    gap: 65px;
+    align-items: center;
+    padding: 48px 40px;
+    img {
+        position: absolute;
+        top: 0;
+        width: 220px;
+        height: 220px;
+    }
+    h3 {
+        margin-top: 0px;
+        margin-bottom: 16px;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 400;
+        color: #fff;
+    }
+    .category-shop-now-btn {
+        width: 90px;
+        background-color: #fff;
+        color: #111;
+        padding: 8px 10px;
+        border-radius: 20px;
+        font-size: 13px;
+        line-height: 24px;
+        text-decoration: none;
+        transition: all 0.3s 0s ease-in-out;
+        font-weight: 600;
+        text-align: center;
+    }
+    .category-shop-now-btn:hover {
+        box-shadow: 0 8px 8px -4px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+        transition: all 0.3s 0s ease-in-out;
+    }
+    .category-blog {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+.category-stuffed-animals {
+    background-color: #ffc12c;
+    .category-blog {
+        margin-left: 224px;
+    }
+}
+.category-wooden-toys {
+    justify-content: flex-end;
+    background-color: #fb416b;
+    .category-blog {
+        margin-right: 224px;
+    }
+}
+/* End call to action */
+/* Product section */
+.product-section-container {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 80px 0px;
+}
+.product-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 140px;
+    .section-title {
+        font-family: 'Varela Round', sans-serif;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 400;
+    }
+    .see-all-toys {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 3px;
+        color: #111;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .see-all-toys:hover {
+        border-bottom: 2px solid #a5c926;
+    }
+    .toys-line-header {
+        width: 100%;
+        height: 2px;
+        background-color: #e5e5e5;
+        .toys-line-header-color {
+            width: 136px;
+            height: 2px;
+            background-color: #a5c926;
+        }
+    }
+}
+.wood-crafted-toys, .stuffed-animal-toys {
+    width: 1175px;
+}
+.wood-crafted-toys-header, .stuffed-animal-toys-header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.wood-crafted-toys-header-content, .stuffed-animal-toys-header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    gap: 30px;
+    .product-card {
+        .product-title {
+            font-family: 'Varela Round', sans-serif;
+            font-size: 15px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+        .product-cost {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 22px;
+            padding: 2px 12px;
+            border-radius: 16px;
+            background-color: #a5c926;
+            color: #fff;
+            font-size: 12px;
+        }
+        .product-card-content {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+            border-radius: 16px;
+            background-color: #fff;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+            padding: 24px 24px 32px;
+            transition: all 0.3s 0s ease-out;
+            cursor: pointer;
+        }
+        .product-card-content:hover {
+            box-shadow: 0 8px 20px -3px rgba(0, 0, 0, 0.1);
+            transform: scale(1.05);
+            transition: all 0.3s 0s ease-out;
+        }
+        .product-photo {
+            width: 182px;
+            height: 182px;
+            padding: 20px;
+            object-fit: cover;
+        }
+    }
+}
+/* End product section */
