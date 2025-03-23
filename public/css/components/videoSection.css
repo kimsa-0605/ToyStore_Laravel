@@ -1,4 +1,3 @@
-/* Video introduce about the shop */
 .video-section-container {
     display: flex;
     padding: 120px 24px;
@@ -51,4 +50,3 @@
         cursor: pointer;
     }
 }
-/* End video introduce about the shop */

@@ -1,0 +1,54 @@
+/* Map contact section */
+.map-conatact-container {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.map-contact {
+    width: 1175px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 58px 0px 120px 0px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+}
+.may-contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 80px;
+}
+.message-contact-infor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20%;
+    .tittle {
+        margin-bottom: 28px;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 24px;
+    }
+    input {  
+        width: 100%;
+        margin-bottom: 24px;
+        padding-right: 28px;
+        padding: 12px 12px;
+        padding-left: 28px;
+        border: 2px solid #e5e5e5;
+        border-radius: 24px;
+        background-color: #f8f8f8;
+    }
+    input::placeholder {
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #3333337a;
+    }
+    .input-title {
+        margin-bottom: 8px;
+        color: #111;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    
+}
+/* End map conatact section */

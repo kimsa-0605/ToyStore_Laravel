@@ -1,0 +1,87 @@
+/* Contact */
+.contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contact-content {
+    display: flex;
+    justify-content: center;
+    gap: 145px;
+    width: 1175px;
+    height: 177px;
+    margin-bottom: 125px;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    .contact-left-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        .fly-button {
+            display: flex;
+            width: 64px;
+            height: 64px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #a5c926;
+            img {
+                color: #fff;
+                width: 32px;
+                height: 32px;
+            }
+        }
+        .contact-left-text {
+            font-family: 'Varela Round', sans-serif;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 400;
+            span {
+                color: #a5c926;
+            }
+        }
+    }
+    .contact-right-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        input {
+            width: 385px;
+            height: 48px;
+            padding-right: 28px;
+            padding-left: 28px;
+            border: 2px solid #e5e5e5;
+            border-radius: 24px;
+            transition: all 0.3s 0s ease-in-out;
+        }
+        input:focus {
+            border: 2px solid #a5c926;
+            outline: none;
+            transition: all 0.3s 0s ease-in-out;
+        }
+        .contact-right-button {
+            padding: 15px 28px;
+            border-radius: 24px;
+            background-color: #a5c926;
+            color: #fff;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 600;
+            text-align: center;
+            display: inline-block;
+            line-height: inherit;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s 0s ease-in-out;
+        }
+        .contact-right-button:hover {
+            box-shadow: 0 8px 8px -4px rgba(165, 201, 38, 0.5);
+            transform: scale(1.05);
+            transition: all 0.3s 0s ease-in-out;
+        }
+    }
+}
+/* End contact */

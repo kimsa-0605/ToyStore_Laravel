@@ -1,0 +1,11 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid red; */
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.container-content {
+    background-color: #fafafa;
+}

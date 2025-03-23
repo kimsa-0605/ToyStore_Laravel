@@ -1,0 +1,134 @@
+.introducing-toy-container {
+    display: flex;
+    justify-content: center;
+    padding: 120px 0px;
+}
+.introducing-toy-content {
+    width: 1175px;
+}
+.introducing-main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    img {
+        width: 100%;
+        border-radius: 16px;
+    } 
+    .title-text {
+        text-align: center;
+        .all-you-need-fun {
+            margin-bottom: 16px;
+            color: #a5c926;
+            font-size: 13px;
+            line-height: 16px;
+            font-weight: 600;
+        }
+        .introducing-toy-text {
+            margin-bottom: 20px;
+            font-family: 'Varela Round', sans-serif;
+            font-size: 40px;
+            line-height: 48px;
+            font-weight: 400;
+        }
+        .text {
+            margin-bottom: 28px;
+            font-size: 14px;
+            line-height: 24px;
+            color: #999;
+        }
+        .about-link {
+            text-decoration: none;
+            color: #111;
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 600;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border-bottom: 2px solid #ddd;
+            transition: all 0.3s 0s ease-in-out;
+        }
+        .about-link:hover {
+            border-bottom: 2px solid #a5c926;
+            transition: all 0.3s 0s ease-in-out;
+        }
+    }
+}
+/* End introducing toy section */
+/*  */
+.position-design-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.position-design-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1175px;
+    gap: 100px;
+}
+.made-for-webflow-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+    .made-for-webflow-title {
+        font-size: 13px;
+        font-weight: 600;
+        color: #a5c926;
+    }
+    .position-design-title {
+        font-family: 'Varela Round', sans-serif;
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 400;
+    }
+}
+.available-for-free {
+    display: flex;
+    gap: 114.95px;
+}
+.available-for-free-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+    .available-for-free-title {
+        font-family: 'Varela Round', sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .line-position-design {
+        width: 70px;
+        height: 2px;
+        background-color: #a5c926;
+    }
+    .position-design-text {
+        color: #999;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+.position-design-photo {
+    width: 570px;
+    height: 424px;
+    border-radius: 16px;
+}
+.catelog-link {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 10px;
+    text-decoration: none;
+    color: #111;
+    font-size: 13px;
+    font-weight: 600;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #ddd;
+    transition: all 0.3s 0s ease-in-out;
+}
+.catelog-link:hover {
+    border-bottom: 2px solid #a5c926;
+    transition: all 0.3s 0s ease-in-out;
+}

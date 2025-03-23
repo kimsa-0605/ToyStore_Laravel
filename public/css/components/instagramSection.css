@@ -1,0 +1,74 @@
+/* Instagram contact */
+.instagram-contact-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.instagram-contact-content {
+    width: 1175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 75px;
+    margin-bottom: 120px;
+}
+.instagram-contact-title {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    .instagram-contact-top-title {
+        font-size: 13px;
+        font-weight: 600;
+        color: #a5c926;
+    }
+    .instagram-contact-bottom-title {
+        font-family: "Varela Round", sans-serif;
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 400;
+    }
+}
+.instagram-contact-photo {
+    display: flex;
+    justify-content: space-between;
+    .instagram-contact-photo-content {
+        display: flex;
+        a {
+            width: 181px;
+            height: 181px;
+            margin: 0px 8px 0px 8px;
+            img {
+                width: 100%;
+                border-radius: 16px;
+                transition: all 0.3s 0s ease-in-out;
+            }
+            img:hover {
+                box-shadow: 0 8px 20px -3px rgba(0, 0, 0, 0.1);
+                transform: scale(1.05);
+                transition: all 0.3s 0s ease-out;
+            }
+        }
+    }
+}
+.instagram-contact-button {
+    padding: 15px 28px;
+    border-radius: 24px;
+    background-color: #a5c926;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s 0s ease-in-out;
+}
+.instagram-contact-button:hover {
+    box-shadow: 0 8px 8px -4px rgba(165, 201, 38, 0.5);
+    transform: scale(1.05);
+    transition: all 0.3s 0s ease-in-out;
+}
+/* End instagram contact */

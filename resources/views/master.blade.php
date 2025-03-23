@@ -10,10 +10,16 @@
         @yield('css/title')
         <link rel="stylesheet" href="{{ asset('css/components/footer.css') }}">
         <link rel="stylesheet" href="{{ asset('css/components/header.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/master.css') }}">
     </head>
     <body>
-        @include('components.header')
-        @yield('content')
-        @include('components.footer')
+        <div class="container">
+            <div class="container-content">
+                @include('components.header')
+                @yield('content')
+                @include('components.footer')
+                @include('components.script')
+            </div>
+        </div>
     </body>
 </html>
