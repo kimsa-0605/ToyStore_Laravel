@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Mail;
+namespace App\Services\EmailServices;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -21,6 +21,6 @@ class RegisterMail extends Mailable
     public function build()
     {
         return $this->subject('Confirm registration successful')
-                    ->view('sendEmail.registerEmail');
+            ->view('sendEmail.registerEmail');
     }
 }

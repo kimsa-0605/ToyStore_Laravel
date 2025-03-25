@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="{{ asset('css/components/subscribeSection.css') }}">
 <link rel="stylesheet" href="{{ asset('css/components/instagramSection.css') }}">
 <link rel="stylesheet" href="{{ asset('css/components/breadcrumbNav.css') }}">
-<title>Catalog</title>
+<title>Delivery</title>
 @endsection
 @section('content')
     @php
@@ -69,7 +69,7 @@
                             <a href="/contacts"
                                 class="btn-call-to-contact-us">Contact
                                 Us</div>
-                        </a>
+                            </a>
                     </div>
                 </div>
             </div>
