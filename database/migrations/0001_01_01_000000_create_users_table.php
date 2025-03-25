@@ -11,13 +11,13 @@ return new class extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('email', 255)->unique();
-            $table->string('password', 50);
+            $table->string('password');
             $table->string('fullname', 50);
-            $table->string('phone', 10);
+            $table->string('phone', 10)->nullable();
             $table->string('avatar_link', 255)->nullable();
-            $table->string('province', 255);
-            $table->string('district', 255);
-            $table->string('detailed_address', 255);
+            $table->string('province', 255)->nullable();
+            $table->string('district', 255)->nullable();
+            $table->string('detailed_address', 255)->nullable();
             $table->timestamps();
         });
     }

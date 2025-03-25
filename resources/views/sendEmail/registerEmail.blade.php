@@ -6,7 +6,7 @@
     <title>Registration successful</title>
 </head>
 <body>
-    <h2>Hello{{ $user['fullname'] }},</h2>
+    <h2>Hello {{ $user['fullname'] }},</h2>
     <p>Thank you for register account <strong>ToyStore</strong>!</p>
     <p>Register Information</p>
     <ul>

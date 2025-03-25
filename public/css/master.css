@@ -9,3 +9,8 @@ body {
 .container-content {
     background-color: #fafafa;
 }
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}

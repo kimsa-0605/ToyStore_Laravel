@@ -1,8 +1,7 @@
 <?php
 
-use App\Http\Controllers\PageController;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Route;
 
 // GET
 Route::get('/', function () {
@@ -20,7 +19,7 @@ Route::get('/delivery', function () {
 Route::get('/contacts', function () {
     return view('pages.contacts');
 });
-Route::get('/sign-up', [UserController::class, 'getSignUpForm']);
+Route::get('sign-up', [UserController::class, 'getSignUpForm']);
 
 // POST
-
+Route::post('sign-up', [UserController::class, 'signUp']);
