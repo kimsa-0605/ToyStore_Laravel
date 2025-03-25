@@ -24,13 +24,7 @@ class RegisterRequest extends FormRequest
         return [
                 'email' => 'required|email|max:255|unique:users,email',
                 'password' => 'required|min:6|max:50',
-                'fullname' => 'required|string|max:50',
-                'phone' => 'nullable|regex:/^0[0-9]{9}$/',
-                'avatar_link' => 'nullable|url|max:255',
-                'province' => 'nullable|string|max:255',
-                'district' => 'nullable|string|max:255',
-                'detailed_address' => 'nullable|string|max:255',
-            
+                'fullname' => 'required|string|min:3|max:50',
         ];
     }
     public function messages()
@@ -41,7 +35,7 @@ class RegisterRequest extends FormRequest
             'email.unique' => 'Email đã tồn tại.',
             'password.required' => 'Mật khẩu không được để trống.',
             'password.min' => 'Mật khẩu phải có ít nhất 6 ký tự.',
-            'phone.regex' => 'Số điện thoại không hợp lệ.',
+            'fullname.min'=>'fullname phải có ít nhất 3 ký tự',
         ];
     }
 }
