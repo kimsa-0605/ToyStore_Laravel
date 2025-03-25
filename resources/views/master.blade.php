@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="{{ asset('css/components/footer.css') }}">
         <link rel="stylesheet" href="{{ asset('css/components/header.css') }}">
         <link rel="stylesheet" href="{{ asset('css/master.css') }}">
+        
     </head>
     <body>
         <div class="container">
