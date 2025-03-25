@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 // GET
 Route::get('/', function () {
@@ -19,5 +20,7 @@ Route::get('/delivery', function () {
 Route::get('/contacts', function () {
     return view('pages.contacts');
 });
+Route::get('/sign-up', [UserController::class, 'getSignUpForm']);
 
+// POST
 
