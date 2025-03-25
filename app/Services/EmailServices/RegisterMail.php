@@ -21,6 +21,6 @@ class RegisterMail extends Mailable
     public function build()
     {
         return $this->subject('Confirm registration successful')
-                    ->view('emails');
+                    ->view('sendEmail.registerEmails');
     }
 }
