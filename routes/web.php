@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 // GET
@@ -19,4 +20,4 @@ Route::get('/contacts', function () {
     return view('pages.contacts');
 });
 
-// POST
+
