@@ -18,12 +18,6 @@ class RegisterMail extends Mailable
     {
         $this->user = $user;
     }
-    public function envelope(): Envelope
-    {
-        return new Envelope(
-            subject: 'Register Mail',
-        );
-    }
     public function build()
     {
         return $this->subject('Confirm registration successful')
