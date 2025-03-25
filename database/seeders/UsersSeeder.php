@@ -8,9 +8,6 @@ use Illuminate\Support\Facades\DB;
 
 class UsersSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
         DB::table('users') ->insert([
@@ -34,7 +31,6 @@ class UsersSeeder extends Seeder
                 'district' => 'Sơn Trà',
                 'detailed_address' => 'Mỹ Khê 3',
             ],
-
         ]);
     }
 }
