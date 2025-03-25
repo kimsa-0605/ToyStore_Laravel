@@ -16,6 +16,7 @@ class RegisterRequest extends FormRequest
                 'email' => 'required|email|max:255|unique:users,email',
                 'password' => 'required|min:6|max:50',
                 'fullname' => 'required|string|min:3|max:50',
+                're-enterPassword'=> 'required|min:6|confirmed',
         ];
     }
     public function messages()
@@ -27,7 +28,7 @@ class RegisterRequest extends FormRequest
             'password.required' => 'Password cannot be empty.',
             'password.min' => 'Password must be at least 6 characters.',
             'fullname.min' => 'Full name must be at least 3 characters.',
-
+            're-enterPassword' => 'Re-entered password does not match',
         ];
     }
 }
