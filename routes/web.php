@@ -20,6 +20,6 @@ Route::get('/contacts', function () {
     return view('pages.contacts');
 });
 Route::get('sign-up', [UserController::class, 'getSignUpForm']);
-
+Route::get('login', [UserController::class, 'getLoginForm']);
 // POST
 Route::post('sign-up', [UserController::class, 'signUp']);
