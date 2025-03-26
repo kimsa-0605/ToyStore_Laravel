@@ -37,10 +37,16 @@ class UserController extends Controller
         } 
         return redirect()->back()->with('message', 'Registration unsuccessful!.');
     }
+    public function createSession(Request $request)
+    {
+        $request->session()->put('user', 'Test User');
+        return redirect('/test-page')->with('message', 'Session đã được tạo!');
+    }
+
     public function logout(Request $request){
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return view('pages.logIn');
+        return redirect('/pages.logout');
     }
 }
