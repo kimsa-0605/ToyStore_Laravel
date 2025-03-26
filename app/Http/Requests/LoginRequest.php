@@ -22,10 +22,8 @@ class LoginRequest extends FormRequest
         return [
             'email.required' => 'Email cannot be empty.',
             'email.email' => 'Invalid email format.',
-            'email.unique' => 'Email already exists.',
             'password.required' => 'Password cannot be empty.',
             'password.min' => 'Password must be at least 6 characters.',
-            'fullname.min' => 'Full name must be at least 3 characters.',
         ];
     }
 }
