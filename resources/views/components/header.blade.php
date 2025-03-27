@@ -29,12 +29,37 @@
                         <a class="header-nav-title-hover" href="/about">About</a>
                         <a class="header-nav-title-hover" href="/contacts">Contacts</a>
                     </div>
-                    <div class="header-cart-icon">
-                        <span>Cart</span>
-                        <i class="bi bi-cart"></i>
+                    <div class="search-bar">
+                        <input type="text" name="search" placeholder="Search...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
+                    @if (session('user'))
+                        <div id="user-avatar-header" class="user-avatar-header">
+                            <img src="{{ session('user_avatar') ?? 'https://bathanh.com.vn/wp-content/uploads/2017/08/default_avatar.png' }}" alt="">
+                            <div id="profile-block" class="profile-block">
+                                <div class="profile-header">
+                                    <i class="fa-regular fa-user"></i>
+                                    <a href="/profile">Profile</a>
+                                </div>
+                                <form class="form-logout" action="{{ route('logout') }}" method="POST">
+                                    @csrf
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    <button class="logout-btn" type="submit">Logout</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="header-cart-icon">
+                            <span>Cart</span>
+                            <i class="bi bi-cart"></i>
+                        </div>
+                    @else
+                        <div class="login-signup-title">
+                            <p><a href="/login">Login</a> / <a href="/sign-up">Sign up</a></p>
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script src="/js/components/header.js"></script>

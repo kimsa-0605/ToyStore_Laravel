@@ -11,14 +11,12 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 1175px;
     .image img {
-        width: 530px;
-        height: 587px;
-        object-fit: cover;
+        width: 500px;
+        height: 500px;
     }
 }
 .signup-form-content {
     display: flex;
-    /* justify-content: center; */
     padding: 0px 40px;
 }
 .form-signup {
