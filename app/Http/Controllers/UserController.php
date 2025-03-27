@@ -37,6 +37,9 @@ class UserController extends Controller
         } 
         return redirect()->back()->with('message', 'Registration unsuccessful!.');
     }
+    public function getLoginForm() {
+        return view('pages.login');
+    }
     public function logout(Request $request){
         Auth::logout();
         $request->session()->invalidate();
