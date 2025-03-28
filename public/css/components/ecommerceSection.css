@@ -1,0 +1,81 @@
+.free-marketing-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 120px;
+}
+.free-marketing-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1175px;
+    gap: 100px;
+}
+.made-for-webflow-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+    .made-for-webflow-title {
+        font-size: 13px;
+        font-weight: 600;
+        color: #a5c926;
+    }
+    .free-marketing-title {
+        font-family: 'Varela Round', sans-serif;
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 400;
+    }
+}
+.available-for-free {
+    display: flex;
+    gap: 114.95px;
+}
+.available-for-free-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+    .available-for-free-title {
+        font-family: 'Varela Round', sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .line-free-marketing {
+        width: 70px;
+        height: 2px;
+        background-color: #a5c926;
+    }
+    .free-marketing-text {
+        color: #999;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .button-available-for-free {
+        width: fit-content;
+        padding: 12px 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 24px;
+        background-color: #a5c926;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+        transition: all 0.3s 0s ease-in-out;
+        cursor: pointer;
+    }
+    .button-available-for-free:hover {
+        box-shadow: 0 8px 8px -4px rgba(165, 201, 38, 0.5);
+        transform: scale(1.05);
+        transition: all 0.3s 0s ease-in-out;
+    }
+}
+.free-marketing-photo {
+    width: 570px;
+    height: 424px;
+    border-radius: 16px;
+}

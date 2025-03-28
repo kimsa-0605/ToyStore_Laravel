@@ -1,0 +1,16 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid red; */
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.container-content {
+    background-color: #fafafa;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
