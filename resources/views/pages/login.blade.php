@@ -18,11 +18,13 @@
                     <div class="form-block">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" required>
+                        <div class="error-message">{{ session('messageEmail') }}</div>
                         @error('email') <div class="error-message">{{ $message }}</div> @enderror
                     </div>
                     <div class="form-block">
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password" required>
+                        <div class="error-message">{{ session('messagePassword') }}</div>
                         @error('password') <div class="error-message">{{ $message }}</div> @enderror
                     </div>
                     <div class="button-block">

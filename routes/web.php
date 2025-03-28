@@ -23,4 +23,5 @@ Route::get('sign-up', [UserController::class, 'getSignUpForm']);
 Route::get('login', [UserController::class, 'getLoginForm']);
 // POST
 Route::post('sign-up', [UserController::class, 'signUp']);
+Route::post('login',[UserController::class,'login']);
 Route::post('logout',[UserController::class, 'logout'])->name('logout');
