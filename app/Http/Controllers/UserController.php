@@ -44,10 +44,10 @@ class UserController extends Controller
         $password = $request->input('password');
         $user = User::where('email', $email)->first();
         if (!$user) {
-            return redirect()->back()->with('message', 'Incorrect email.');
+            return redirect()->back()->with('messageEmail', 'Incorrect email.');
         }        
         if (!password_verify($password, $user->password)) {
-            return redirect()->back()->with('message', 'Incorrect password.');
+            return redirect()->back()->with('messagePassword', 'Incorrect password.');
         }
         if (Auth::attempt(['email' => $email, 'password' => $password])) {
             $user = Auth::user();
