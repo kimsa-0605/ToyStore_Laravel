@@ -26,3 +26,6 @@ Route::get('login', [UserController::class, 'getLoginForm']);
 Route::post('sign-up', [UserController::class, 'signUp']);
 Route::post('login',[UserController::class,'login']);
 Route::post('logout',[UserController::class, 'logout'])->name('logout');
+
+use App\Http\Controllers\ProductController;
+Route::get('index', [ProductController::class, 'getIndex']);
