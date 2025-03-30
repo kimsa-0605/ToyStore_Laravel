@@ -1,12 +1,11 @@
 <?php
 
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 // GET
-Route::get('/', function () {
-    return view('pages.home');
-});
+Route::get('/', [ProductController::class, 'getIndex']);
 Route::get('/catalog', function () {
     return view('pages.catalog');
 });
@@ -26,6 +25,3 @@ Route::get('login', [UserController::class, 'getLoginForm']);
 Route::post('sign-up', [UserController::class, 'signUp']);
 Route::post('login',[UserController::class,'login']);
 Route::post('logout',[UserController::class, 'logout'])->name('logout');
-
-use App\Http\Controllers\ProductController;
-Route::get('index', [ProductController::class, 'getIndex']);
