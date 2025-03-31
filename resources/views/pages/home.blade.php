@@ -79,11 +79,11 @@
                     @foreach ($stuffedAnimals as $product)
                         @if($product)
                             <div class="product-card">
-                                <div class="product-card-content">
+                                <a href="/product/detail/{{ $product->id }}" class="product-card-content">
                                     <img src="{{ $product->image_link }}" alt="{{ $product->product_name }}" class="product-photo">
                                     <h3 class="product-title">{{ $product->product_name }}</h3>
                                     <span class="product-cost">${{ $product->price }} USD</span>
-                                </div>
+                                </a>
                             </div>
                         @else
                             <p>No product found.</p>
@@ -110,11 +110,11 @@
                     @foreach ($woodenToys as $product)
                         @if($product)
                             <div class="product-card">
-                                <div class="product-card-content">
+                                <a href="/product/detail/{{ $product->id }}" class="product-card-content">
                                     <img src="{{ $product->image_link }}" alt="{{ $product->product_name }}" class="product-photo">
                                     <h3 class="product-title">{{ $product->product_name }}</h3>
                                     <span class="product-cost">${{ $product->price }} USD</span>
-                                </div>
+                                </a>
                             </div>
                         @else
                             <p>No product found.</p>

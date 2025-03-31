@@ -5,7 +5,7 @@ use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 // GET
-Route::get('/', [ProductController::class, 'getIndex']);
+Route::get('/', [ProductController::class, 'getProduct']);
 Route::get('/catalog', function () {
     return view('pages.catalog');
 });
