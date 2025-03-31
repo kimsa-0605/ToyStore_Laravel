@@ -300,6 +300,8 @@
             padding: 24px 24px 32px;
             transition: all 0.3s 0s ease-out;
             cursor: pointer;
+            text-decoration: none;
+            color: black;
         }
         .product-card-content:hover {
             box-shadow: 0 8px 20px -3px rgba(0, 0, 0, 0.1);

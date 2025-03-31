@@ -43,6 +43,38 @@ class ProductsSeeder extends Seeder
                 'quantity' => 35
             ],
             [
+                'product_name' => 'Christmas Deer',
+                'price' => 19,
+                'image_link' => 'https://cdn.prod.website-files.com/5baddb6a35e113da0e9a4802/5bae0ede56ac5481f54e12e9_33610-4-plush-toy-hd-min-p-500.png',
+                'category_id' => 1,
+                'description' => 'A soft and cuddly teddy bear.',
+                'quantity' => 50
+            ],
+            [
+                'product_name' => 'Pluto Yellow Dog',
+                'price' => 28,
+                'image_link' => 'https://cdn.prod.website-files.com/5baddb6a35e113da0e9a4802/5bae0e6335e113da999a7976_33568-4-toy-image-min-p-500.png',
+                'category_id' => 1,
+                'description' => 'A large plush toy with a cute design.',
+                'quantity' => 40
+            ],
+            [
+                'product_name' => 'Grey Elephant',
+                'price' => 45,
+                'image_link' => 'https://cdn.prod.website-files.com/5baddb6a35e113da0e9a4802/5bae0db61f2da2a4ef173617_cute-plush-toy-stuffed-animal-47335-min-p-500.png',
+                'category_id' => 1,
+                'description' => 'A fluffy dog toy in a hoodie.',
+                'quantity' => 45
+            ],
+            [
+                'product_name' => 'Funny Clown',
+                'price' => 36,
+                'image_link' => 'https://cdn.prod.website-files.com/5baddb6a35e113da0e9a4802/5bae0d07939555eac3b8a91c_33910-6-toy-clipart-min.png',
+                'category_id' => 1,
+                'description' => 'A colorful plush animal with a mini friend.',
+                'quantity' => 35
+            ],
+            [
                 'product_name' => 'Happy Flower',
                 'price' => 38,
                 'image_link' => 'https://cdn.prod.website-files.com/5baddb6a35e113da0e9a4802/5baf529c7a16ad5b5fd9fdf3_33727-9-wooden-toy-transparent-image-min.png',
@@ -73,6 +105,38 @@ class ProductsSeeder extends Seeder
                 'category_id' => 2,
                 'description' => 'A stackable wooden rabbit toy.',
                 'quantity' => 30
+            ],
+            [
+                'product_name' => 'Rainbow Truck',
+                'price' => 28,
+                'image_link' => 'https://cdn.prod.website-files.com/5baddb6a35e113da0e9a4802/5baf51b7c8d851a73cc4544c_33649-6-toy-transparent-image-min-p-500.png',
+                'category_id' => 2,
+                'description' => 'A soft and cuddly teddy bear.',
+                'quantity' => 50
+            ],            
+            [
+                'product_name' => 'Happy Dog',
+                'price' => 30,
+                'image_link' => 'https://cdn.prod.website-files.com/5baddb6a35e113da0e9a4802/5baf5171ace69cb064b33d42_33388-1-wooden-toy-photos-min-p-500.png',
+                'category_id' => 2,
+                'description' => 'A large plush toy with a cute design.',
+                'quantity' => 40
+            ],
+            [
+                'product_name' => 'Caterpillar',
+                'price' => 18,
+                'image_link' => 'https://cdn.prod.website-files.com/5baddb6a35e113da0e9a4802/5baf50843a685ea7dfd6e4fd_33371-3-wooden-toy-min-p-500.png',
+                'category_id' => 2,
+                'description' => 'A fluffy dog toy in a hoodie.',
+                'quantity' => 45
+            ],
+            [
+                'product_name' => 'Wooden Tractor',
+                'price' => 22,
+                'image_link' => 'https://cdn.prod.website-files.com/5baddb6a35e113da0e9a4802/5baf5100ace69c1b26b33d2d_33476-9-wooden-toy-hd-min-p-800.png',
+                'category_id' => 2,
+                'description' => 'A colorful plush animal with a mini friend.',
+                'quantity' => 35
             ],
         ]);
     }
