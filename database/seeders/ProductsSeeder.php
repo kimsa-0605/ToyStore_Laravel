@@ -9,6 +9,7 @@ class ProductsSeeder extends Seeder
 {
     public function run(): void
     {
+        DB::table('products')->truncate();
         DB::table('products')->insert([
             [
                 'product_name' => 'Teddy Bear',
