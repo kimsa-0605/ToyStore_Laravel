@@ -14,3 +14,44 @@ body {
     font-size: 14px;
     margin-top: 10px;
 }
+/* Pagination */
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 60px;
+    button {
+        width: 35px;
+        height: 35px;
+        border: 2px solid #a4c639;
+        background: white;
+        color: #a4c639;
+        border-radius: 50%;
+        font-size: 14px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .right-left-btn {
+        border: none;
+        background-color:#fafafa;
+        font-size: 18px;
+    }
+}
+#pagination button.active {
+    background: #a4c639;
+    color: white;
+}
+#pagination button:hover {
+    background: #d4e157;
+}
+#pagination button:disabled {
+    color: #ccc;
+    border-color: #ccc;
+    cursor: not-allowed;
+}
+#pagination span {
+    font-size: 14px;
+    color: #a4c639;
+}
+/* End pagination */
