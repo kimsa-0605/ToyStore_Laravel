@@ -25,3 +25,12 @@ Route::get('login', [UserController::class, 'getLoginForm']);
 Route::post('sign-up', [UserController::class, 'signUp']);
 Route::post('login',[UserController::class,'login']);
 Route::post('logout',[UserController::class, 'logout'])->name('logout');
+
+Route::get('/forgot-password', [UserController::class, 'showFogotPassword'])->name('forgot.password.form');
+Route::post('/forgot-password', [UserController::class, 'sendOTP'])->name('forgot.password');
+
+Route::get('/verify-otp', [UserController::class, 'showVerifyOTPForm'])->name('verify.otp.form');
+Route::post('/verify-otp', [UserController::class, 'verifyOTP'])->name('verify.otp');
+
+Route::get('/reset-password', [UserController::class, 'showResetPasswordForm'])->name('reset.password.form');
+Route::post('/reset-password', [UserController::class, 'resetPassword'])->name('reset.password');
