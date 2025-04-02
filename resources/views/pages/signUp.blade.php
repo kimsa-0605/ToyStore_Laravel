@@ -2,7 +2,7 @@
 @section('css/title')
 <link rel="stylesheet" href="{{ asset('css/pages/signUp.css') }}">
 <title>Sign Up</title>
-@endsection
+@endsection 
 @section('content')
 <!-- Sign up contact section -->
 <div class="container-signup">
