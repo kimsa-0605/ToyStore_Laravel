@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 // GET
 Route::get('/products', [ProductController::class, 'getAllProduct']);
 Route::get('/products/category/{category_id}', [ProductController::class, 'getProductByCategory']);
+Route::get('/products/search', [ProductController::class, 'searchProduct']);
 
 // POST
 
