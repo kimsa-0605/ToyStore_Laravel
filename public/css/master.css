@@ -55,3 +55,42 @@ body {
     color: #a4c639;
 }
 /* End pagination */
+
+/* Tạo lớp overlay phủ toàn màn hình */
+#loading-waiting {
+    position: fixed; /* Giữ cố định trên màn hình */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Nằm trên cùng */
+}
+
+/* Tạo hiệu ứng dấu chấm */
+.loading-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #a4c639; /* Màu chữ */
+    display: flex;
+    align-items: center;
+}
+
+/* Hiệu ứng dấu chấm lần lượt xuất hiện */
+.loading-text span {
+    animation: dotAnimation 1.5s infinite;
+    opacity: 0;
+}
+
+.loading-text span:nth-child(1) { animation-delay: 0s; }
+.loading-text span:nth-child(2) { animation-delay: 0.3s; }
+.loading-text span:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes dotAnimation {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
