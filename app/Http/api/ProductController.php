@@ -24,7 +24,7 @@ class ProductController
     public function searchProduct(Request $request): JsonResponse
     {
         $keyword = $request->input('keyword');
-        $perPage = $request->input('per_page', 12);
+        $perPage = $request->input('per_page', 9);
 
         $query = Product::with('categories');
 
