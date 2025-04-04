@@ -16,7 +16,7 @@ class UserController
         $email = $request->get('email');
         $user = User::where("email", $email)->first();
         if (!$user) {
-            return response()->json(['isSent'=>false,'message' => 'This email is not registered!!'], 404);
+            return response()->json(['isSent'=>false,'message' => 'This email is not registered!!']);
         }
         $otp = str_pad(random_int(100000, 999999), 6, '0', STR_PAD_LEFT);
         Mail::to($user->email)->send(new OtpMail($user, $otp));
@@ -37,20 +37,20 @@ class UserController
             return response()->json([
                 'isCorrect' => false,
                 'message' => 'OTP has expired or is invalid. Please request a new one.'
-            ], 400);
+            ]);
         }
         if ($otpCode !== $storedOtpData['code']) {
             return response()->json([
                 'isCorrect' => false,
                 'message' => 'Invalid OTP. Please try again.'
-            ], 400);
+            ]);
         }
         $createdAt = \Carbon\Carbon::parse($storedOtpData['created_at']);
         if (now()->diffInSeconds($createdAt) > 60) {
             return response()->json([
                 'isCorrect' => false,
                 'message' => 'OTP expired. Please request a new one.'
-            ], 400);
+            ]);
         }
         Cache::forget('otp_' . $email);
         Cache::put('email_repassword', $email, now()->addMinutes(10));
@@ -67,11 +67,11 @@ class UserController
             return response()->json([
                 'isSuccess' => false,
                 'message' => 'Session expired. Please verify OTP again.'
-            ], 400);
+            ]);
         }
         $user = User::where('email', $email)->first();
         if (!$user) {
-            return response()->json(['isSuccess' => false,'message' => 'User not found.'], 404);
+            return response()->json(['isSuccess' => false,'message' => 'User not found.']);
         }
         $user->password = bcrypt($newPassword); 
         $user->save();

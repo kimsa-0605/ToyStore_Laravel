@@ -16,7 +16,7 @@ emailButton.addEventListener('click', async function () {
     const email = document.getElementById('email').value;
     try {
         const data = await postData('/api/forgot-password', {'email': email});
-        console.log(data);
+        console.log(data.isSent);
         if (data.isSent) {
             emailForm.style.display = 'none';
             otpForm.style.display = 'block';
@@ -41,7 +41,7 @@ otpButton.addEventListener('click', async function () {
             passwordForm.style.display = 'block';
         } else {
             otpError.style.display = 'block';
-            otpError.innerHTML = `${data.response.data.message}`;
+            otpError.innerHTML = `${data.message}`;
         }
     } catch (error) {
         otpError.innerHTML = "An error occurred while verifying the OTP.";
@@ -60,9 +60,23 @@ passwordButton.addEventListener('click', async function () {
             window.location.href = '/login';
         } else {
             passwordError.style.display = 'block';
-            passwordError.innerHTML = `${data.response.data.message}`;
+            passwordError.innerHTML = `${data.message}`;
         }
     } catch (error) {
         passwordError.innerHTML = "An error occurred while resetting the password.";
+    }
+});
+document.querySelector('.icon-back').addEventListener('click', function() {
+    const emailForm = document.getElementById('emailForm');
+    const otpForm = document.getElementById('otpForm');
+    const passwordForm = document.getElementById('passwordForm');
+    if (emailForm.style.display !== 'none') {
+        window.location.href = 'login';
+    } else if (otpForm.style.display !== 'none') {
+        otpForm.style.display = 'none';
+        emailForm.style.display = 'block';
+    } else if (passwordForm.style.display !== 'none') {
+        passwordForm.style.display = 'none';
+        otpForm.style.display = 'block';
     }
 });
