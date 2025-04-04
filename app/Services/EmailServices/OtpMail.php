@@ -20,6 +20,6 @@ class OtpMail extends Mailable
         $this->otp = $otp;
     }
     public function build(){
-        return $this->subject('Your OTP code')->view('sendEmail.fogotPassword');
+        return $this->subject('Your OTP code')->view('sendEmail.forgotPassword');
     }
 }
