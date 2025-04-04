@@ -47,7 +47,6 @@ function renderProducts(products) {
         </div>
     `).join("");
 }
-
 function setupCategoryFilters(activeCategoryId) {
     const categoryButtons = document.querySelectorAll(".categories-toys span");
     categoryButtons.forEach(button => {

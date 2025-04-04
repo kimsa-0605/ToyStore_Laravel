@@ -58,7 +58,7 @@ body {
 
 /* Tạo lớp overlay phủ toàn màn hình */
 #loading-waiting {
-    position: fixed; /* Giữ cố định trên màn hình */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -67,19 +67,17 @@ body {
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 9999; /* Nằm trên cùng */
+    z-index: 9999; 
 }
 
 /* Tạo hiệu ứng dấu chấm */
 .loading-text {
     font-size: 24px;
     font-weight: bold;
-    color: #a4c639; /* Màu chữ */
+    color: #a4c639; 
     display: flex;
     align-items: center;
 }
-
-/* Hiệu ứng dấu chấm lần lượt xuất hiện */
 .loading-text span {
     animation: dotAnimation 1.5s infinite;
     opacity: 0;
