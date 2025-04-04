@@ -12,10 +12,23 @@ let emailError = document.getElementById('emailError');
 let otpError = document.getElementById('otpError');
 let passwordError = document.getElementById('passwordError');
 
+function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
 emailButton.addEventListener('click', async function () {
-    const email = document.getElementById('email').value;
+    const email = document.getElementById('email').value.trim();
+    if (!email) {
+        emailError.innerHTML = "Please enter your email.";
+        emailError.style.display = "block";
+        return;
+    }
+    if (!isValidEmail(email)) {
+        emailError.innerHTML = "Invalid email format.";
+        emailError.style.display = "block";
+        return;
+    }
     try {
-        const data = await postData('/api/forgot-password', {'email': email});
+        const data = await postData('/api/forgot-password', { 'email': email });
         console.log(data.isSent);
         if (data.isSent) {
             emailForm.style.display = 'none';
@@ -31,11 +44,17 @@ emailButton.addEventListener('click', async function () {
 });
 
 otpButton.addEventListener('click', async function () {
-    const otpInput = document.getElementById('otp').value;
+    const otpInput = document.getElementById('otp').value.trim();
     const email = document.getElementById('email').value;
+
+    if (!otpInput) {
+        otpError.innerHTML = "Please enter the OTP.";
+        otpError.style.display = "block";
+        return;
+    }
     try {
         const data = await postData('/api/forgot-password/otp', { 'otp': otpInput, 'email': email });
-        console.log(data)
+        console.log(data);
         if (data.isCorrect) {
             otpForm.style.display = 'none';
             passwordForm.style.display = 'block';
@@ -49,13 +68,19 @@ otpButton.addEventListener('click', async function () {
 });
 
 passwordButton.addEventListener('click', async function () {
-    const newPassword = document.getElementById('newPassword').value;
+    const newPassword = document.getElementById('newPassword').value.trim();
     if (!newPassword) {
-        passwordError.textContent = "Please enter a new password.";
+        passwordError.innerHTML = "Please enter a new password.";
+        passwordError.style.display = "block";
+        return;
+    }
+    if (newPassword.length < 6) {
+        passwordError.innerHTML = "Password must be at least 6 characters long.";
+        passwordError.style.display = "block";
         return;
     }
     try {
-        const data = await putData('/api/forgot-password', { 'password':newPassword });
+        const data = await putData('/api/forgot-password', { 'password': newPassword });
         if (data.isSuccess) {
             window.location.href = '/login';
         } else {
@@ -66,10 +91,8 @@ passwordButton.addEventListener('click', async function () {
         passwordError.innerHTML = "An error occurred while resetting the password.";
     }
 });
-document.querySelector('.icon-back').addEventListener('click', function() {
-    const emailForm = document.getElementById('emailForm');
-    const otpForm = document.getElementById('otpForm');
-    const passwordForm = document.getElementById('passwordForm');
+
+document.querySelector('.icon-back').addEventListener('click', function () {
     if (emailForm.style.display !== 'none') {
         window.location.href = 'login';
     } else if (otpForm.style.display !== 'none') {
