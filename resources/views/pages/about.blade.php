@@ -49,7 +49,7 @@
     <div class="position-design-container">
         <div class="position-design-content">
             <div class="available-for-free">
-                <img class="position-design-photo"
+                <img data-aos="zoom-in" class="position-design-photo"
                     src="https://assets.website-files.com/5badda2935e11303a89a461e/5bb5c77f0b5b7843138dc3c3_side-image-02-p-1080.jpeg"
                     alt>
                 <div class="available-for-free-content">
@@ -65,7 +65,7 @@
                         There is no magic formula to write perfect
                         ad copy
                     </p>
-                    <a class="catelog-link" href="/pages/catalog.html">
+                    <a class="catelog-link" href="/catalog">
                         <span>Explore Our Toys</span>
                         <i class="fa-solid fa-right-long"></i>
                     </a>

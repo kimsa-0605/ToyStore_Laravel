@@ -11,7 +11,7 @@
     <!-- Banner -->
     <div class="banner-container">
         <div class="banner-content">
-            <div class="banner-blog">
+            <div class="banner-blog" data-aos="zoom-in">
                 <div class="banner-blog-content">
                     <div class="banner-title">Say Hello to
                         ToyStore!</div>
@@ -38,7 +38,7 @@
     <!-- Call to action -->
     <div id="toy-category-container" class="toy-category-container">
         <div class="toy-category-content">
-            <div class="category-stuffed-animals">
+            <div class="category-stuffed-animals" data-aos="zoom-in">
                 <img src="/images/ui/stuffed.png" alt>
                 <div class="category-blog">
                     <h3 class="category-title">Stuffed Animals</h3>
@@ -46,7 +46,7 @@
                         now</span>
                 </div>
             </div>
-            <div class="category-wooden-toys">
+            <div class="category-wooden-toys" data-aos="zoom-in">
                 <div class="category-blog">
                     <h3 class="category-title">Wooden Toys</h3>
                     <span class="category-shop-now-btn" data-category-id="2">Shop
@@ -78,7 +78,7 @@
                 <div class="product-list">
                     @foreach ($stuffedAnimals as $product)
                         @if($product)
-                            <div class="product-card">
+                            <div class="product-card" data-aos="zoom-in">
                                 <a href="/product/detail/{{ $product->id }}" class="product-card-content">
                                     <img src="{{ $product->image_link }}" alt="{{ $product->product_name }}" class="product-photo">
                                     <h3 class="product-title">{{ $product->product_name }}</h3>
@@ -109,7 +109,7 @@
                 <div class="product-list">
                     @foreach ($woodenToys as $product)
                         @if($product)
-                            <div class="product-card">
+                            <div class="product-card" data-aos="zoom-in">
                                 <a href="/product/detail/{{ $product->id }}" class="product-card-content">
                                     <img src="{{ $product->image_link }}" alt="{{ $product->product_name }}" class="product-photo">
                                     <h3 class="product-title">{{ $product->product_name }}</h3>

@@ -33,22 +33,26 @@
                         <input placeholder="Your contact email" type="text">
                         <p class="input-title">Message</p>
                         <textarea placeholder="Message text..." name="" id=""></textarea>
-                        <div class="button-contact-map"></div>
+                        <div class="button-contact-map">Send Message</div>
                     </div>
                     <div class="contact-infor-layout">
                         <p class="tittle">Contact Info</p>
-                        <div class="contact-infor-content">
-                            <p class="text">4293  Euclid Avenue, Los Angeles, CA 90012</p>
-                            <p class="text">+1 213 974-3898</p>
-                            <p class="text email">toystore@template.com</p>
-                        </div>
-                        <p class="follow-us-text">Follow Us</p>
-                        <div class="contact-infor-icon">
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-square-facebook"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-pinterest"></i>
-                            <i><i class="fa-brands fa-youtube"></i></i>
+                        <div class="contact-infor">
+                            <div class="contact-infor-content">
+                                <p class="text">4293  Euclid Avenue, Los Angeles, CA 90012</p>
+                                <p class="text">+1 213 974-3898</p>
+                                <p class="text-email">toystore@template.com</p>
+                            </div>
+                            <div class="contact-infor-content-bottom">
+                                <p class="follow-us-text">Follow Us</p>
+                                <div class="contact-infor-icon">
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-pinterest"></i>
+                                    <i><i class="fa-brands fa-youtube"></i></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

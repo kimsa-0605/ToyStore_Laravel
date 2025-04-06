@@ -1,5 +1,5 @@
 <div id="video-section-container" class="video-section-container">
-    <div class="video-section-content">
+    <div class="video-section-content" data-aos="zoom-in">
         <p class="about-shop-title">About The Shop</p>
         <p class="watch-our-story">Watch Our Story</p>
         <p class="about-shop-title">There is no magic formula to write perfect ad copy. It is based on a number of factors, including ad placement, <br> demographic, even the consumer's mood.</p>
