@@ -25,15 +25,11 @@ class ProductController
     {
         $keyword = $request->input('keyword');
         $perPage = $request->input('per_page', 9);
-
         $query = Product::with('categories');
-
         if ($keyword) {
             $query->where('product_name', 'like', '%' . $keyword . '%');
         }
-
         $products = $query->orderBy('created_at', 'desc')->paginate($perPage);
-
         return response()->json([
             'success' => true,
             'message' => $products->isEmpty() 
