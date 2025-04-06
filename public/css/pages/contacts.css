@@ -22,14 +22,15 @@
 .message-contact-infor {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20%;
+    gap: 15%;
     .tittle {
         margin-bottom: 28px;
         font-family: 'Varela Round', sans-serif;
         font-size: 24px;
     }
     input {  
-        width: 100%;
+        max-width: 505px;
+        min-width: 505px;
         margin-bottom: 24px;
         padding-right: 28px;
         padding: 12px 12px;
@@ -37,6 +38,7 @@
         border: 2px solid #e5e5e5;
         border-radius: 24px;
         background-color: #f8f8f8;
+        transition: all 0.3s 0s ease-out;
     }
     input::placeholder {
         font-size: 14px;
@@ -49,6 +51,80 @@
         font-size: 12px;
         font-weight: 600;
     }
+    textarea {
+        max-width: 505px;
+        min-width: 505px;
+        min-height: 160px;
+        padding: 24px 10px 24px 28px;
+        border: 2px solid #e5e5e5;
+        border-radius: 24px;
+        transition: all 0.3s 0s ease-out;
+    }
     
+    textarea:focus, input:focus {
+        border-color: #A5C926;
+        outline: none;
+        transition: all 0.3s 0s ease-out;
+    }
+    textarea::placeholder {
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #3333337a;
+        font-family: 'Open Sans', sans-serif;
+    }
+}
+.contact-infor {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    line-height: 2;
+    .contact-infor-content {
+        font-size: 12px;
+        .text-email {
+            width: fit-content;
+            padding-bottom: 7px;
+            border-bottom: 2px solid #e5e5e5;
+            font-weight: 600;
+            transition: all 0.3s 0s ease-out;
+        }
+        .text-email:hover {
+            border-bottom: 2px solid #A5C926;
+            transition: all 0.3s 0s ease-out;
+        }
+    }
+}
+.contact-infor-content-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-infor-icon {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    i {
+        font-size: 18px;
+    }
+}
+.button-contact-map {
+    margin-top: 20px;
+    padding: 15px 28px;
+    border-radius: 24px;
+    background-color: #a5c926;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s 0s ease-in-out;
+}
+.button-contact-map:hover {
+    box-shadow: 0 8px 8px -4px rgba(165, 201, 38, 0.5);
+    transform: scale(1.05);
+    transition: all 0.3s 0s ease-in-out;
 }
 /* End map conatact section */

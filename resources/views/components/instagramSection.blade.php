@@ -5,7 +5,7 @@
             <p class="instagram-contact-top-title">@ElasticThemes</p>
             <p class="instagram-contact-bottom-title">We're on Instagram!</p>
         </div>
-        <div class="instagram-contact-photo">
+        <div class="instagram-contact-photo" data-aos="zoom-in">
             <div class="instagram-contact-photo-content">
                 <a href="">
                         <img src="https://cdn.prod.website-files.com/5badda2935e11303a89a461e/5badecf79395558fbeb88a49_instagram-01.jpg" alt="">

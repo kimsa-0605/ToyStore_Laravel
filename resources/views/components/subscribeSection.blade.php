@@ -1,5 +1,5 @@
 <!-- Contact -->
-<div id="contact-container" class="contact-container">
+<div id="contact-container" class="contact-container" data-aos="zoom-in">
     <div class="contact-content">
         <div class="contact-left-content">
             <div class="fly-button">

@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="{{ asset('css/components/footer.css') }}">
         <link rel="stylesheet" href="{{ asset('css/components/header.css') }}">
         <link rel="stylesheet" href="{{ asset('css/master.css') }}">
-        
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     </head>
     <body>
         <div class="container">
