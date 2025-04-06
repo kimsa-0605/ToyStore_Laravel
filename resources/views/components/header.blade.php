@@ -29,10 +29,13 @@
                         <a class="header-nav-title-hover" href="/about">About</a>
                         <a class="header-nav-title-hover" href="/contacts">Contacts</a>
                     </div>
-                    <div class="search-bar">
-                        <input type="text" name="search" placeholder="Search...">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
+                        <div class="search-bar">
+                            <input type="text" id="search-input" name="keyword" placeholder="Search...">
+                            <i class="fa-solid fa-magnifying-glass" style="display:flex; align-items: center;"><button id="search-btn" type="submit"></button></i>
+                            
+                            
+                        </div>
+                    
                     @if (session('user'))
                         <div id="user-avatar-header" class="user-avatar-header">
                             <img src="{{ session('user_avatar') ?? 'https://bathanh.com.vn/wp-content/uploads/2017/08/default_avatar.png' }}" alt="">
@@ -63,3 +66,4 @@
     </div>
 </div>
 <script src="/js/components/header.js"></script>
+<script src="/js/components/searchProduct.js"></script>
