@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Api\ProductController;
+use App\Http\Api\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -10,7 +11,10 @@ Route::get('/products/category/{category_id}', [ProductController::class, 'getPr
 Route::get('/products/search', [ProductController::class, 'searchProduct']);
 
 // POST
+Route::post('/forgot-password', [UserController::class, 'sendOTPcode']);
+Route::post('/forgot-password/otp', [UserController::class, 'verifyOTP']);
 
 // PUT
+Route::put('/forgot-password', [UserController::class, 'resetPassword']);
 
 // DELETE
