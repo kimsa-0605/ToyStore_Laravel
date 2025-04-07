@@ -1,0 +1,239 @@
+   /* Card product detail */
+   .container-product-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .price {
+        color: #A5C926;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 400;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+.product-detail-content {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 1175px;
+    gap: 20px;
+    justify-content: center;
+    margin: 80px 0px;
+}
+.card-product-detail {
+    padding: 10px 80px 40px 80px;
+}
+.card-product-detail-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    h2 {
+        font-size: 40px;
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 400;
+        }
+}
+.image-product {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+.product-img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+}
+.stock {
+    font-size: 14px;
+    color: #999;
+}
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 5px;
+}
+.quantity-group {
+    display: flex;
+    border: 2px solid #A5C926;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.quantity-group button,
+.quantity-group input {
+    width: 40px;
+    height: 35px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.3s 0s ease-in-out;
+}
+.quantity-group input {
+    text-align: center;
+    border-left: 2px solid #A5C926;
+    border-right: 2px solid #A5C926;
+    outline: none;
+}
+.add-to-cart {
+    width: fit-content;
+    height: 40px;
+    padding: 5px 20px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    background:  #A5C926;
+    cursor: pointer;
+    border-radius: 40px;
+    color: white;
+    border: none;
+    transition: all 0.3s 0s ease-in-out;
+}
+.quantity-group button:hover,
+.add-to-cart:hover {
+    background: #A5C926;
+    color: #fff;
+    box-shadow: 0 8px 8px -4px rgba(165, 201, 38, 0.5);
+    transform: scale(1.05);
+    transition: all 0.3s 0s ease-in-out;
+}
+.detail-content {
+    display: flex; 
+    flex-direction: column;
+    gap: 20px;
+    h3 {
+        font-size: 28px;
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 400;
+    }
+    .toys-line-header {
+        width: 100%;
+        height: 2px;
+        background-color: #e5e5e5;
+        .toys-line-header-color {
+            width: 136px;
+            height: 2px;
+            background-color: #a5c926;
+        }
+    }
+}
+/* Card product detail */
+/* Product section */
+.product-section-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px; 
+}
+.product-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 140px;
+    .section-title {
+        font-family: 'Varela Round', sans-serif;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 400;
+    }
+    .see-all-toys {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 3px;
+        color: #111;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .see-all-toys:hover {
+        border-bottom: 2px solid #a5c926;
+    }
+    .toys-line-header {
+        width: 100%;
+        height: 2px;
+        background-color: #e5e5e5;
+        .toys-line-header-color {
+            width: 136px;
+            height: 2px;
+            background-color: #a5c926;
+        }
+    }
+}
+.related-products {
+    width: 1175px;
+}
+.related-products-header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.related-products-header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    gap: 30px;
+    .product-card {
+        .product-title {
+            font-family: 'Varela Round', sans-serif;
+            font-size: 15px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+        .product-cost {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 22px;
+            padding: 2px 12px;
+            border-radius: 16px;
+            background-color: #a5c926;
+            color: #fff;
+            font-size: 12px;
+        }
+        .product-card-content {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+            border-radius: 16px;
+            background-color: #fff;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+            padding: 24px 24px 32px;
+            transition: all 0.3s 0s ease-out;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
+        .product-card-content:hover {
+            box-shadow: 0 8px 20px -3px rgba(0, 0, 0, 0.1);
+            transform: scale(1.05);
+            transition: all 0.3s 0s ease-out;
+        }
+        .product-photo {
+            width: 182px;
+            height: 182px;
+            padding: 20px;
+            object-fit: cover;
+        }
+    }
+}
+/* End product section */

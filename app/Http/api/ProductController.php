@@ -38,4 +38,27 @@ class ProductController
             'data' => $products
         ]);
     }
+    public function filterProduct(Request $request): JsonResponse
+    {
+        $category_id = $request->input('category_id');
+        $min_price = $request->input('min_price');
+        $max_price = $request->input('max_price');
+        $perPage = $request->input('per_page', 9);
+        $query = Product::with('categories');
+        if ($category_id) {
+            $query->where('category_id', $category_id);
+        }
+        if ($min_price && $max_price) {
+            $query->whereBetween('price', [$min_price, $max_price]);
+        }
+        $products = $query->paginate($perPage);
+        if ($products->isEmpty()) {
+            return response()->json(['message' => 'No products found matching the filters'], 404);
+        }
+        return response()->json([
+            'success' => true,
+            'message' => 'Products retrieved successfully',
+            'data' => $products
+        ]);
+    }
 }
