@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/products', [ProductController::class, 'getAllProduct']);
 Route::get('/products/category/{category_id}', [ProductController::class, 'getProductByCategory']);
 Route::get('/products/search', [ProductController::class, 'searchProduct']);
+Route::get('products/filter', [ProductController::class, 'filterProduct']);
 
 // POST
 Route::post('/forgot-password', [UserController::class, 'sendOTPcode']);
