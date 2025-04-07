@@ -21,6 +21,7 @@ Route::get('/contacts', function () {
 Route::get('sign-up', [UserController::class, 'getSignUpForm']);
 Route::get('login', [UserController::class, 'getLoginForm']);
 Route::get('/product/detail/{id}', [ProductController::class, 'getProductDetail']);
+Route::get('forgot-password', [UserController::class, 'getForgotPasswordForm']);
 
 // POST
 Route::post('sign-up', [UserController::class, 'signUp']);

@@ -42,15 +42,15 @@
                 <img src="/images/ui/stuffed.png" alt>
                 <div class="category-blog">
                     <h3 class="category-title">Stuffed Animals</h3>
-                    <a href="#" class="category-shop-now-btn">Shop
-                        now</a>
+                    <span class="category-shop-now-btn" data-category-id="1">Shop
+                        now</span>
                 </div>
             </div>
             <div class="category-wooden-toys">
                 <div class="category-blog">
                     <h3 class="category-title">Wooden Toys</h3>
-                    <a href="#" class="category-shop-now-btn">Shop
-                        now</a>
+                    <span class="category-shop-now-btn" data-category-id="2">Shop
+                        now</span>
                 </div>
                 <img src="/images/ui/wooden.png" alt>
             </div>
@@ -65,11 +65,11 @@
                     <div class="stuffed-animal-toys-header-content">
                         <span class="section-title">Stuffed
                             Animals</span>
-                        <a href="/catalog" class="see-all-toys">
+                        <span class="see-all-toys category-shop-now-btn" data-category-id="1" >
                             <span class="see-all-toys-title">See All
                                 Toys</span>
                             <i class="fa-solid fa-right-long"></i>
-                        </a>
+                        </span>
                     </div>
                     <div class="toys-line-header">
                         <div class="toys-line-header-color"></div>
@@ -96,11 +96,11 @@
                     <div class="wood-crafted-toys-header-content">
                         <span class="section-title">Wooden
                             Toys</span>
-                        <a href="/catalog" class="see-all-toys">
+                        <span data-category-id="2" class="see-all-toys category-shop-now-btn">
                             <span class="see-all-toys-title">See All
                                 Toys</span>
                             <i class="fa-solid fa-right-long"></i>
-                        </a>
+                        </span>
                     </div>
                     <div class="toys-line-header">
                         <div class="toys-line-header-color"></div>
@@ -129,4 +129,5 @@
     @include('components.ecommerceSection', ['title' => 'Available for FREE!', 'textBtn' => 'GET IT NOW!'])
     @include('components.subscribeSection')
     @include('components.instagramSection')
+    <script type="module" src="/js/pages/home.js"></script>
 @endsection
