@@ -18,6 +18,9 @@ Route::get('/delivery', function () {
 Route::get('/contacts', function () {
     return view('pages.contacts');
 });
+Route::get('/search', function () {
+    return view('pages.search');
+});
 Route::get('sign-up', [UserController::class, 'getSignUpForm']);
 Route::get('login', [UserController::class, 'getLoginForm']);
 Route::get('forgot-password', [UserController::class, 'getForgotPasswordForm']);
