@@ -46,7 +46,7 @@
                         </div>
                         <div class="filter-items">
                             <div class="price-range">
-                                <input type="range" class="price-slider">
+                                <input type="range" class="price-slider"  min="0" max="500" step="1">
                                 <div class="price-labels">
                                     <span class="price-min">0$</span>
                                     <span class="price-max">500$</span>
@@ -121,4 +121,5 @@
         </div>
     </div>
 </div>
+<script type="module" src="/js/pages/search.js"></script>
 @endsection
